@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>NotchDashboard - Dashboard</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="./assets/vendor/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="./assets/vendor/fontawesome/css/brands.css" rel="stylesheet">
+  <link href="./assets/vendor/fontawesome/css/solid.css" rel="stylesheet">
+
+
+
+
+
+  <!-- Vendor CSS Files -->
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="./assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="./assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="./dashboard.html" class="logo d-flex align-items-center">
+        <img src="./assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">NotchDashboard</span>
+      </a>
+      <i class="fa-solid fa-bars toggle-sidebar-btn"></i>
+      <a id="spaceseparator">|||</a>
+      <button type="button" id="botonmonedas" class="btn btn-warning rounded-pill">Monedas: 10354</button>
+      <a id="spaceseparator">||</a>
+      <a href="./login.html" class="btn btn-info rounded-pill">Recargar Recursos</a>
+    </div><!-- End Logo -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="fa-solid fa-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              Tienes 4 notificaciones
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Crear Servidor</h4>
+                <p>Para crear un servidor debes dirigirte al apartado "Crear Servidor" y rellanar el formulario</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Sistema de Renovación</h4>
+                <p>Cada 7 días tendrá que renovar su servidor sino quiere que se elimine</p>
+                <p>NotchDashboard</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Tienda</h4>
+                <p>En el apartado de tienda podrá comprar recursos para mejorar su servidor</p>
+                <p>NotchDashboard</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Página AFK</h4>
+                <p>En la página AFK podrá obtener BellaCoins para comprar recursos en la tienda.</p>
+                <p>NotchDashboard</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="./assets/img/user.png" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">NotchDev</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>NotchDev</h6>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="settings.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="settings.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="">
+                <i class="bi bi-discord"></i>
+                <span>Discord Server</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="./login.html">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Log Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link" href="./dashboard.html">
+          <i class="fa-solid fa-house"></i>
+          <span>Página Principal</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./create.html">
+          <i class="fa-solid fa-plus"></i>
+          <span>Crear Servidor</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./store.html">
+          <i class="fa-solid fa-store"></i>
+          <span>Tienda</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+
+
+
+
+      <li class="nav-heading">Conseguir Monedas</li>
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <i class="fa-solid fa-coins"></i>
+          <span>Página AFK</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <i class="fa-solid fa-coins"></i>
+          <span>Linkvertise</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" disabled>
+          <i class="fa-solid fa-user"></i>
+          <span>Referidos (Soon)</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./j4r.html">
+          <i class="fa-brands fa-discord"></i>
+          <span>Unirse por Recursos</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./redeem.html">
+          <i class="fa-solid fa-ticket"></i>
+          <span>Reclamar Cupón</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-heading">Páginas</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./settings.html">
+          <i class="fa-solid fa-user"></i>
+          <span>Perfil</span>
+        </a>
+      </li>
+
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <i class="fa-solid fa-wifi"></i>
+          <span>Estado</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <i class="fa-solid fa-terminal"></i>
+          <span>Panel</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./login.html">
+          <i class="fa-solid fa-power-off"></i>
+          <span>Cerrar Sesión</span>
+        </a>
+      </li>
+
+      <li class="nav-heading">Herramientas</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <i class="fa-solid fa-paste"></i>
+          <span>Paste Server</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <i class="fa-brands fa-discord"></i>
+          <span>Discord</span>
+        </a>
+      </li>
+
+
+      <li class="nav-heading">Administracíon</li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./admin.html">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <span>Administración</span>
+        </a>
+      </li>
+
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Cuenta</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./dashboard.html">Home</a></li>
+          <li class="breadcrumb-item active">Account</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+
+    <div class="row">
+      <div class="col-xl-4">
+
+        <div class="card">
+          <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+
+            <a class="nav-link nav-profile d-flex align-items-center pe-0">
+              <center>
+                <img src="./assets/img/user.png" alt="Profile" class="settings-profile-img">
+              </center>
+            </a>
+            <h2>NotchDev</h2>
+            <h3>User</h3>
+            <div class="social-links mt-2">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-xl-8">
+
+        <div class="card info-card">
+          <div class="card-body">
+            <center>
+              <h5 class="card-title">Datos de la Cuenta</h5>
+              <label for="recipient-name" class="col-form-label">Username:</label>
+              <p class="text-muted mb-0">
+                NotchDev
+              </p>
+              <label for="message-text" class="col-form-label">Email:</label>
+              <p class="text-muted mb-0">
+                notchdev@example.com
+              </p>
+            </center>
+          </div>
+        </div>
+
+        <div class="card info-card">
+          <div class="card-body">
+            <center>
+              <h5 class="card-title">Ajustes de Cuenta</h5>
+              <p><a href=""><button type="button" class="btn btn-danger"><i class="fa-solid fa-lock"></i> Restablecer
+                    Contraseña</button></a></p>
+              <p><a href="./login.html"><button type="button" class="btn btn-warning"><i
+                      class="fa-solid fa-right-from-bracket"></i> Cerrar Sesíon</button></a></p>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      <a>&copy; Copyright <a href=""><strong>NotchDashboard</strong></a> - 2023</a>
+      <br>
+      <a>Made by Don_osoo005#6475</i></a>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  <!-- Vendor JS Files -->
+
+  </script>
+  <script src="./assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/chart.js/chart.min.js"></script>
+  <script src="./assets/vendor/echarts/echarts.min.js"></script>
+  <script src="./assets/vendor/quill/quill.min.js"></script>
+  <script src="./assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="./assets/vendor/tinymce/tinymce.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
